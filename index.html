@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <meta name="description" content="This is tourism website">
+    <link rel="website icon" type="png/jpg"href="icon.png">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", serif;
+      }
+      body {
+        background-image: url("beach.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .center {
+        background-color: white;
+        width: 95vw;
+        height: auto;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+      }
+
+      .center > div {
+        margin: 2.5vh 0;
+      }
+
+      .center div span {
+        font-size: 1.2em;
+      }
+
+      .tourism {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .center div button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(46, 188, 228);
+        font-weight: 600;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      .center div button:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .center {
+          width: 95vw;
+        }
+
+        .tourism {
+          font-size: 2em;
+        }
+
+        .center div span {
+          font-size: 1em;
+        }
+
+        .center div button {
+          font-size: 0.9em;
+          padding: 8px 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .center {
+          width: 95vw;
+        }
+
+        .tourism {
+          font-size: 1.8em;
+        }
+
+        .center div span {
+          font-size: 0.9em;
+        }
+
+        .center div button {
+          font-size: 0.8em;
+          padding: 6px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="tourism">Tourism</div>
+      <div><span>Click to know more</span></div>
+      <div><button onclick="openPage()">Get started</button></div>
+    </div>
+    <script>
+      function openPage() {
+        window.location.href = "section2.html";
+      }
+    </script>
+  </body>
+</html>
